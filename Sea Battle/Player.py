@@ -1,7 +1,9 @@
 from Exceptions import BoardException
 from Scheme import Dot
 
+import random
 from random import randint
+
 
 class Player:
     def __init__(self, board, enemy):
@@ -11,7 +13,6 @@ class Player:
     """
     метод не вызывается напрямую из основного класса, а используется только в классах-потомках
     """
-
     def ask(self):
         raise NotImplementedError()
 
@@ -43,6 +44,20 @@ class User(Player):
 
 class Computer(Player):
     def ask(self):
-        dot = Dot(randint(0, 5), randint(0, 5))
+        """
+        Если пользователь успел потопить хотя бы один корабль компьютера,
+        Компьютеру даётся преимущество:
+        Он может рандомно выбрать, будет ли он сразу бить по клеткам с кораблями пользователя
+        Или же атакует рандомную незанятую клетку на доске
+        """
+        if self.enemy.killed > 1:
+            advantage = randint(0, 1)
+            if advantage:
+                ship = random.choice(self.enemy.ships)
+                dot = random.choice(ship.dots)
+            else:
+                dot = Dot(randint(0, 5), randint(0, 5))
+        else:
+            dot = Dot(randint(0, 5), randint(0, 5))
         print(f"Ход компьютера: {dot.x + 1} {dot.y + 1}")
         return dot
