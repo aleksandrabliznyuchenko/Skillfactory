@@ -50,7 +50,7 @@ class Computer(Player):
         Он может рандомно выбрать, будет ли он сразу бить по клеткам с кораблями пользователя
         Или же атакует рандомную незанятую клетку на доске
         """
-        if self.enemy.killed > 1:
+        if self.enemy.killed >= 1:
             advantage = randint(0, 1)
             if advantage:
                 ship = random.choice(self.enemy.ships)
