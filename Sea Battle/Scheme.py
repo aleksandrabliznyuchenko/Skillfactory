@@ -1,4 +1,10 @@
-from Exceptions import BoardException, BoardOutException, BoardOccupiedException, BoardWrongShipException
+from Exceptions import BoardOutException, BoardOccupiedException, BoardWrongShipException
+
+near = [
+    (-1, -1), (-1, 0), (-1, 1),
+    (0, -1), (0, 0), (0, 1),
+    (1, -1), (1, 0), (1, 1)
+]
 
 
 class Dot:
@@ -14,17 +20,16 @@ class Dot:
 
 
 class Board:
-    """
-    hidden - скрыто ли поле от пользователя (True/False)
-    size - размер поля (стандартно 6х6)
-
-    field - отметка поля
-    ships - список кораблей на доске
-    occupied - занятые кораблями клетки (либо клетки, куда стреляли, но промазали)
-    killed - потопленные корабли
-    """
-
     def __init__(self, hidden=False, size=6):
+        """
+        hidden - скрыто ли расположение короблей на поле от пользователя (True/False)
+        size - размер поля (стандартно 6х6)
+
+        field - отметка поля
+        ships - список кораблей на доске
+        occupied - занятые кораблями клетки (либо клетки, куда стреляли, но промазали)
+        killed - потопленные корабли
+        """
         self.hidden = hidden
         self.size = size
 
@@ -49,12 +54,6 @@ class Board:
         return board
 
     def contour(self, ship, mark=False):
-        near = [
-            (-1, -1), (-1, 0), (-1, 1),
-            (0, -1), (0, 0), (0, 1),
-            (1, -1), (1, 0), (1, 1)
-        ]
-
         for dot in ship.dots:
             for dot_x, dot_y in near:
                 cur_dot = Dot(dot.x + dot_x, dot.y + dot_y)
@@ -85,21 +84,19 @@ class Board:
         self.ships.append(ship)
         self.contour(ship)
 
-    """
-    находится ли точка за пределами доски
-    """
-
     def dot_out(self, dot):
+        """
+        Находится ли точка за пределами доски
+        """
         return not ((0 <= dot.x < self.size) and (0 <= dot.y < self.size))
 
-    """
-    Стреляем по кораблю
-    В случае промаха ход переходит к другому игроку
-    Если корабль ранили, но не добили, даём игроку дополнительный ход
-    Если корабль потопили, обводим его контур на доске, а ход переходит к другому игроку
-    """
-
     def shoot(self, dot):
+        """
+        Стреляем по кораблю
+        В случае промаха ход переходит к другому игроку
+        Если корабль ранили, но не добили, даём игроку дополнительный ход
+        Если корабль потопили, обводим его контур на доске, а ход переходит к другому игроку
+        """
         if self.dot_out(dot):
             raise BoardOutException
         if dot in self.occupied:
@@ -114,6 +111,7 @@ class Board:
                 if ship.lives == 0:
                     self.killed += 1
                     self.contour(ship, mark=True)
+                    self.ships.remove(ship)
                     print("Корабль потоплен!")
                     return False
                 else:

@@ -12,10 +12,8 @@ class BoardOccupiedException(BoardException):
         return "Вы уже стреляли в эту клетку"
 
 
-"""
-Если мы случайно сгенерили неправильный корабль
-"""
-
-
 class BoardWrongShipException(BoardException):
+    """
+    Если мы случайно сгенерили неправильный корабль
+    """
     pass

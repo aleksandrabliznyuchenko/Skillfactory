@@ -2,14 +2,13 @@ from Scheme import Dot
 
 
 class Ship:
-    """
-    length - длина корабля
-    bow - точка, в которой размещен нос корабля
-    orientation - ориентация корабля (0 = вертикальная, 1 = горизонтальная)
-    lives - количество жизней у корабля (= длине корабля)
-    """
-
     def __init__(self, length, bow, orientation):
+        """
+        length - длина корабля
+        bow - точка, в которой размещен нос корабля
+        orientation - ориентация корабля(0 = вертикальная, 1 = горизонтальная)
+        lives - количество жизней у корабля( = длине корабля)
+        """
         self.length = length
         self.bow = bow
         self.orientation = orientation
@@ -32,8 +31,3 @@ class Ship:
             ship_dots.append(Dot(cur_x, cur_y))
 
         return ship_dots
-
-    # попали ли мы в корабль выстрелом
-    def shot_result(self, shot):
-        result = shot in self.dots
-        return result
