@@ -1,7 +1,7 @@
-TOKEN = "2097801258:AAHWJKEnYMqRn1MveM6sJgzFGFVmsTrQXWA"
+TOKEN = ""
 # t.me/CurrencyConvertingBot
 
-KEY = "47d4b138101d42998af7"
+KEY = ""
 # Currency Converter API
 
 currency = {"рубль": "RUB",
