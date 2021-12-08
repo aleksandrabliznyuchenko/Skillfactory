@@ -13,7 +13,6 @@ POST_TYPES = [
 # Create your models here.
 
 class Author(models.Model):
-    # подумать, какой длины юзер айди нужен; и как связывать поля таблиц медлу собой
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     rank = models.FloatField(default=0.0)
 
