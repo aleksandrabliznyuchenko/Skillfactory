@@ -1,0 +1,26 @@
+<!--  наследуемся от шаблона default.html, который мы создавали ещё во времена flatpages -->
+{% extends 'flatpages/default.html' %}
+
+{% load custom_filters %}
+
+{% block title %}
+{% if post %}
+    {{ post.header }}
+{% endif %}
+{% endblock title %}
+
+{% block content %}
+    {% if post %}
+        <h2>
+            {{ post.header|censor }}
+        </h2>
+        <h4>
+            Дата загрузки: {{ post.created_datetime|date:'d-m-Y H:i' }}
+        </h4>
+        <p>
+            {{ post.text|censor }}
+        </p>
+    {% else %}
+        <h2>Новость не найдена!</h2>
+    {% endif %}
+{% endblock content %}
