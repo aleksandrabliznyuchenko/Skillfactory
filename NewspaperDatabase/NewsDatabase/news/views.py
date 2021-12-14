@@ -9,7 +9,6 @@ class PostList(ListView):
     queryset = Post.objects.order_by('-id')
 
 
-# создаём представление, в котором будут детали конкретного отдельного товара
 class PostDetail(DetailView):
     model = Post
     template_name = 'post.html'
