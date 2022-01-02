@@ -1,0 +1,27 @@
+{% extends "default.html" %}
+
+{% block content %}
+<h2>Страница авторизованного пользователя {{request.user.username}}</h2>
+
+{% if is_confirmed %}
+<h3>
+    Ваш электронный адрес подтверждён.
+</h3>
+{% else %}
+<h3>
+    Ваш электронный адрес не подтверждён.
+</h3>
+{% endif %}
+
+<div> Здесь может содержаться персональная информация для каждого пользователя </div>
+<p>&nbsp;</p>
+
+{% if not is_author %}
+    <button> <a href="sign/upgrade/"> Стать автором </a> </button>
+{% endif %}
+
+<button> <a href="/subscription/"> Подписаться на рассылку </a> </button>
+
+<button> <a href="sign/logout/">Выйти</a> </button>
+
+{% endblock %}
