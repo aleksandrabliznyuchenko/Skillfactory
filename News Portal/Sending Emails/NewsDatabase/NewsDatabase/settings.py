@@ -144,7 +144,6 @@ DOMAIN = 'http://127.0.0.1:8000'
 
 # Страница, на которую переправляют пользователя для авторизации,
 # и страница, куда он попадет после успешного входа на сайт
-# LOGIN_URL = 'sign/login/'
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = 'news/'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -156,8 +155,8 @@ ACCOUNT_FORMS = {'signup': 'sign.forms.BasicSignupForm'}
 
 EMAIL_HOST = 'smtp.yandex.ru'  # адрес сервера Яндекс-почты
 EMAIL_PORT = 465  # порт smtp сервера
-EMAIL_HOST_USER = 'bliznyu4enko'
-EMAIL_HOST_PASSWORD = 'rsynenhecoekxaju'  # сгенерированный пароль от почты
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''  # сгенерированный пароль от почты
 EMAIL_USE_SSL = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-DEFAULT_FROM_EMAIL = 'bliznyu4enko@yandex.ru'
+DEFAULT_FROM_EMAIL = ''
