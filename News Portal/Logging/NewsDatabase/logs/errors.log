@@ -1,0 +1,246 @@
+ERROR 2022-03-01 17:31:42,749 Internal Server Error: /news/40/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('queryset'), <traceback object at 0x00000218B8D0C480>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 67, in get_object
+    obj = super().get_object(queryset=kwargs['queryset'])
+KeyError: 'queryset'
+ERROR 2022-03-01 17:31:42,761 "GET /news/40/ HTTP/1.1" 500 96931 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-01 17:32:14,670 Internal Server Error: /news/42/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('queryset'), <traceback object at 0x00000218B8CD6DC0>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 67, in get_object
+    obj = super().get_object(queryset=kwargs['queryset'])
+KeyError: 'queryset'
+ERROR 2022-03-01 17:32:14,672 "GET /news/42/ HTTP/1.1" 500 96784 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-01 17:38:38,677 Internal Server Error: /news/38/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('queryset'), <traceback object at 0x00000270C58B8200>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 64, in get_object
+    obj = super().get_object(queryset=kwargs['queryset'])
+KeyError: 'queryset'
+ERROR 2022-03-01 17:38:38,685 "GET /news/38/ HTTP/1.1" 500 96860 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-01 17:42:23,441 Internal Server Error: /news/43/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'django.urls.exceptions.NoReverseMatch'>, NoReverseMatch("Reverse for 'post_update' with arguments '('',)' not found. 1 pattern(s) tried: ['news/(?P<pk>[0-9]+)/edit$']"), <traceback object at 0x0000011E38A68CC0>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    response = response.render()
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\response.py", line 105, in render
+    self.content = self.rendered_content
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\response.py", line 83, in rendered_content
+    return template.render(context, self._request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 170, in render
+    return self._render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 162, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 938, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\base.py", line 905, in render_annotated
+    return self.render(context)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\template\defaulttags.py", line 446, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\base.py", line 86, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\urls\resolvers.py", line 694, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'post_update' with arguments '('',)' not found. 1 pattern(s) tried: ['news/(?P<pk>[0-9]+)/edit$']
+ERROR 2022-03-01 17:42:23,451 "GET /news/43/ HTTP/1.1" 500 158751 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-01 17:44:09,096 Internal Server Error: /news/43/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('queryset'), <traceback object at 0x0000012DDC2E0840>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 64, in get_object
+    obj = super().get_object(queryset=kwargs['queryset'])
+KeyError: 'queryset'
+ERROR 2022-03-01 17:44:09,110 "GET /news/43/ HTTP/1.1" 500 96860 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-01 17:46:35,265 Internal Server Error: /news/40/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('queryset'), <traceback object at 0x0000017F8350C500>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 64, in get_object
+    obj = super().get_object(queryset=self.kwargs['queryset'])
+KeyError: 'queryset'
+ERROR 2022-03-01 17:46:35,269 "GET /news/40/ HTTP/1.1" 500 96870 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-01 17:49:42,754 Internal Server Error: /news/1/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('queryset'), <traceback object at 0x0000029820A27A80>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 64, in get_object
+    obj = super().get_object(queryset=kwargs['queryset'])
+KeyError: 'queryset'
+ERROR 2022-03-01 17:49:42,760 "GET /news/1/ HTTP/1.1" 500 96840 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-01 17:50:27,324 Internal Server Error: /news/38/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('pk'), <traceback object at 0x000001B436D68B40>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 65, in get_object
+    obj = super().get_object(queryset=kwargs['pk'])
+KeyError: 'pk'
+ERROR 2022-03-01 17:50:27,328 "GET /news/38/ HTTP/1.1" 500 96873 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-01 17:51:39,663 Internal Server Error: /news/38/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'KeyError'>, KeyError('queryset'), <traceback object at 0x0000022EC9A2CA00>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\contrib\auth\mixins.py", line 71, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\detail.py", line 106, in get
+    self.object = self.get_object()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 64, in get_object
+    obj = super().get_object(queryset=kwargs['queryset'])
+KeyError: 'queryset'
+ERROR 2022-03-01 17:51:39,668 "GET /news/38/ HTTP/1.1" 500 96860 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-07 20:49:41,003 Internal Server Error: /news/search/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'django.contrib.auth.models.User.DoesNotExist'>, DoesNotExist('User matching query does not exist.'), <traceback object at 0x000002D5555A6AC0>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\list.py", line 157, in get
+    context = self.get_context_data()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 51, in get_context_data
+    context['is_authorized'] = User.objects.get(pk=self.request.user.id)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2022-03-07 20:49:41,027 "GET /news/search/ HTTP/1.1" 500 104527 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
+ERROR 2022-03-07 20:49:51,575 Internal Server Error: /news/ C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\log.py (<class 'django.contrib.auth.models.User.DoesNotExist'>, DoesNotExist('User matching query does not exist.'), <traceback object at 0x000002D555625180>)
+Traceback (most recent call last):
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\utils\decorators.py", line 130, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\views\generic\list.py", line 157, in get
+    context = self.get_context_data()
+  File "C:\Users\AleksandraB\PycharmProjects\Skillfactory\NewsDatabase\NewsDatabase\news\views.py", line 24, in get_context_data
+    context['is_authorized'] = User.objects.get(pk=self.request.user.id)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\db\models\query.py", line 435, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2022-03-07 20:49:51,584 "GET /news/ HTTP/1.1" 500 103244 C:\Users\AleksandraB\AppData\Local\Programs\Python\Python38\lib\site-packages\django\core\servers\basehttp.py None
