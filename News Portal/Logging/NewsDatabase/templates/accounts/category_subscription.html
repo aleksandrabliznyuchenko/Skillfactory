@@ -1,0 +1,15 @@
+{% extends 'default.html' %}
+ 
+{% block title %}
+Category Subscription
+{% endblock title %}
+ 
+{% block content %}
+<h3>Ваши подписки</h3>
+<p> Подпишитесь на интересующие вас категории новостей и получайте нашу рассылку со свежими публикациями. </p>
+<form method="POST">
+    {% csrf_token %} 
+    {{ form }} <!-- Теперь нам нужна только готовая форма и кнопка -->
+    <input type="submit" value="Подписаться">
+</form>
+{% endblock content %}
