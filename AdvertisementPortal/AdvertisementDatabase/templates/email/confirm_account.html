@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+</head>
+<body>
+    {% load account %}
+    <h1>Спасибо за регистрацию на портале объявлений RPG Advertisement Portal, странник {{ user.username }}.</h1>
+    <h3>Пожалуйста, пройдите <a href="http://{{ domain }}{% url 'activate' uidb64=uid token=token %}">
+        по ссылке</a>, чтобы подтвердить ваш адрес электронной почты.</h3>
+</body>
