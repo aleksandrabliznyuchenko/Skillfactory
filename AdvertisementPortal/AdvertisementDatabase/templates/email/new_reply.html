@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+</head>
+<body>
+    <h3>
+        <p>Вам оставили новый отклик!</p>
+        <p> </p>
+        <p>{{ reply.author.user.username }}:</p>
+        <p> </p>
+        <p>"{{ reply.text }}"</p>
+        <p> </p>
+        <p><a href="{{ domain }}{% url 'replies' %}">Посмотрите</a>, кто откликнулся на ваши объявления,
+            как можно скорее.</p>
+    </h3>
+</body>

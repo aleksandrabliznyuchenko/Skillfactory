@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документ</title>
+</head>
+<body>
+    <h3>
+        К сожалению, {{ post.author.user.username | title }} отклонил/а ваш отклик на объявление {{ post.header }}.
+        Для просмотра объявления перейдите <a href="{{ domain }}{% url 'post_detail' post.id %}">по ссылке</a>.
+    </h3>
+</body>

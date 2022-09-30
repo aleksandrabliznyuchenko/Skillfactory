@@ -1,0 +1,40 @@
+{% extends 'default.html' %}
+
+{% load custom_filters %}
+
+{% block title %}
+{{ post.header }}
+{% endblock title %}
+
+{% block content %}
+{% if post %}
+<h2>
+    {{ post.header|censor }}
+</h2>
+<h4>
+    Дата загрузки: {{ post.created_datetime|date:'d-m-Y H:i' }}
+</h4>
+<h4>
+    <p> </p>
+        [{{ post.get_category_display }}]
+    <p> </p>
+</h4>
+
+<p>
+    {{ post.text|censor|safe }}
+</p>
+{% else %}
+<h2>Объявление не найдено!</h2>
+{% endif %}
+
+{% if is_author %}
+    <a href="{% url 'post_delete' post.id %}"><u>Удалить</u></a>
+    <p>&nbsp;</p>
+{% elif is_authorized %}
+    <a href="{% url 'reply_create' post.id %}">Откликнуться</a>
+    <p>&nbsp;</p>
+{% endif %}
+
+<a href="{% url 'overview' %}"><u>Вернуться на портал</u></a>
+
+{% endblock content %}
